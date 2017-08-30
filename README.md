@@ -1,7 +1,7 @@
 ## Example Node.js project for MGT-656 HW5
 
 This is a minimal [Node.js](http://nodejs.org/)
-application that we are using for the second
+application that we are using for the fifth
 homework assignment in MGT-656 at
 the Yale School of Management.
 
