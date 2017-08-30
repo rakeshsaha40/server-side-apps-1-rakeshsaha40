@@ -1,5 +1,5 @@
 {
-  "name": "MGT645-HW-2",
+  "name": "MGT645-HW-5",
   "version": "0.0.0",
   "description": "Getting started with Node.js and the C9 IDE",
   "main": "server.js",
@@ -12,6 +12,9 @@
     "eslint-plugin-react": "^6.9.0"
   },
   "devDependencies": {},
+  "engines": {
+    "node": "6.*"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
