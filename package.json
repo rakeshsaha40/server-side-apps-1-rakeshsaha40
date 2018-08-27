@@ -22,6 +22,6 @@
     "start": "if [ \"$NODE_ENV\" = \"production\" ]; then node server.js; else nodemon server.js; fi"
   },
   "author": "Kyle Jensen",
-  "license": "ISC",
+  "license": "Unlicense",
   "repository": "https://github.com/yale-mgt-656/hw5.git"
 }
