@@ -1,25 +1,40 @@
-## Example Node.js project for MGT-656 HW5
+## Simple starter Node.js server application for MGT-656/660 
 
-This is a minimal [Node.js](http://nodejs.org/)
+This is a simple [Node.js](http://nodejs.org/)
 application that we are using for the fifth
-homework assignment in MGT-656 at
+homework assignment in MGT-656/660 at
 the Yale School of Management.
 
 Please refer to the class website for the
-"official" instructions. Briefly, you will
+instructions on how to submit this assignment. Here, you will 
+find instructions on how to run the assignment code. Briefly, you will
 need to clone this project in
 [GitHub](http://www.github.com) and then
-create a new workspace on [Cloud9](http://c9.io)
-based on your repo. Then you'll get the
-application running and alter it.
+edit the `server.js` file. The `server.js` file
+contains a tiny server-side application written
+in JavaScript. I suspect most students in MGT-656
+will want to use [Cloud9](http://c9.io) as your
+code editor and "development environment"---a place
+to run your application while you're working on it.
 
-What are all these files, you ask? Below you'll find a description of each one - hopefully this will help you get started.
+This repo contains a handful of files and the function of
+each is described below.
 
-* `server.js` - this is your server code. The `express` module is how you tell your application what to do with different requests -- check out the [Express website](http://expressjs.com) for more.
-* `package.json` - this is Node's configuration file for your project. Inside you'll find information about the project, along with a list of dependencies (like Express) that you can install into `node_modules/` with `npm install`.
-* `node_modules/` - the folder containing all of your dependencies. Usually you don't need to do anything to it, but if your app is misbehaving, sometimes removing and reinstalling `node_modules/` by running `rm -rf node_modules/` and `npm install` will fix it.
-* `package-lock.json` - this describes the exact state of your `node_modules/` tree without uploading the tree itself. npm modules are always being updated, so this allows you to know exactly what you're running and standardize this across installations.
-* `.gitignore` - this tells Git which files and folders to ignore -- for example, you don't want to push `node_modules/` to GitHub.
+* `server.js` - this is your server/application code. You can see at the top of that file a line like
+    "`require('express');`". [Express](http://expressjs.com) is a "web application framework": a collection of code
+    that helps you write web apps. Other popular web application frameworks include Ruby on Rails,
+    Django, and Laravel. The [Express](http://expressjs.com) website documents how Express works
+    and you'll likely "enjoy" reading it.
+* `package.json` - this is Node's configuration file for your project.
+    Inside you'll find information about the project, along with a list of dependencies (like Express) that get installed into a `node_modules/` directory when you run `npm install`.
+* `package-lock.json` - this file describes the dependencies of your dependencies. For example,
+    it shows precisely which dependencies Express has. We use this file to ensure that
+    when I run the code on my machine, it is *exactly* the same experience as you running
+    the code on your machine.
+* `.gitignore` - this tells Git which files and folders to ignore -- for example,
+    you don't want to keep `node_modules/` under version control with git because
+    the files therein are created automatically when you run `npm install`.
 * `Procfile` - this is how you tell Heroku how to run your code. You shouldn't need to mess with this one.
-* `.eslintrc.json` - this is where we customize the rules for how your code gets linted (checked for style/errors) - most of them come from the `eslint-config-airbnb` package. You also shouldn't need to modify this one (please don't, actually).
-* `README.md` - this file :)
+* `README.md` - this file :). If you look at the file, you can see it is written
+   in [markdown](https://en.wikipedia.org/wiki/Markdown) format, which is a popular
+   format for documentation.
